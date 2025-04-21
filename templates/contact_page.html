@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .profile-card {
+            max-width: 350px;
+            margin: 50px auto;
+            text-align: center;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="card">
+            <div class="card-header bg-white border-0">
+                <h3 class="mt-3">{{ name }}</h3>
+                <p>{{ message }}</p>
+            </div>
+            <div class="card-body">
+                <h5>Basic Information</h5>
+                <div style="text-align: left;">
+                    <p><strong>Job:</strong> {{ title }}</p>
+                    <p><strong>Email:</strong> {{ email }}</p>
+                    <p><strong>D.O.B:</strong> {{ dob }}</p>
+                 </div>
+                
+                <h5>Socials</h5>
+                <div class="social-icons" style="text-align: left;">
+                    <p><strong>Twitter:</strong> {{ twitter}}</p>
+                    <p><strong>Instagram:</strong> {{ instagram}}</p>
+                    <p><strong>Whatsapp:</strong> {{ whatsapp}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
